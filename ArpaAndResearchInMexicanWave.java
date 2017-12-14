@@ -1,25 +1,26 @@
-//851A
+/**
+ *Problem 851A
+ */
 
-import java.util.*;
+import java.util.Scanner;
 
-public class ArpaAndResearchInMexicanWave {
-    public static void main(String args[]) {
-        Scanner kbd = new Scanner(System.in);
+public class ArpaAndResearchInMexicanWave{
 
-        int n = kbd.nextInt();
+    public static void main(String args[]){
+        Scanner kbd = new Scanner (System.in);
+        int n = kbd.nextInt ();
+        int k = kbd.nextInt ();
+        int t = kbd.nextInt ();
+        if (t <= k && t <= n) {
+            System.out.println (t);
 
-        int k = kbd.nextInt();
+        }
+        else if (t <= n) {
+            System.out.println (k);
 
-        int t = kbd.nextInt();
-
-        if (t <= k && t <= n){
-            System.out.println(t);
-
-        }else if (t <= n){
-            System.out.println(k);
-
-        }else{
-            System.out.print(k-(t-n));
+        }
+        else {
+            System.out.print (k - (t - n));
         }
     }
 }
